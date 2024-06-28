@@ -1,0 +1,17 @@
+.scrollable-div::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  .scrollable-div::-webkit-scrollbar-track {
+    background-color: #d9dbe8; /* Color of the track */
+}
+
+  .scrollable-div::-webkit-scrollbar-thumb {
+    background-color: #bdc1d4; /* Color of the thumb */
+    border-radius: 0; /* Rounded corners for the thumb */
+}
+
+  .scrollable-div::-webkit-scrollbar-thumb:hover {
+    background-color: #bdc1d4; /* Darker blue color on hover */
+
+}

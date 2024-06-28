@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-custom-filter:hover {
+  @apply filter;
+  -webkit-filter: invert(13%) sepia(91%) saturate(5887%) hue-rotate(235deg)
+    brightness(99%) contrast(118%);
+  filter: invert(13%) sepia(91%) saturate(5887%) hue-rotate(235deg)
+    brightness(99%) contrast(118%);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background-color: #f1f1f1; /* Background color of the scrollbar */
+}
+
+/* Set the color of the draggable part (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #3787f7; /* Blue color for the thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Optional: Set styles for the track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Same as the scrollbar background color */
+}
+
+  /* Custom CSS for checkbox */
+    /* Hide default checkbox */
+    .custom-checkbox input[type="checkbox"] {
+      appearance: none; /* Remove default appearance */
+      -webkit-appearance: none; /* Remove default appearance for WebKit */
+      -moz-appearance: none; /* Remove default appearance for Firefox */
+      outline: none; /* Remove outline */
+      cursor: pointer; /* Add cursor pointer */
+      height: 1.4rem; /* Adjust height of custom checkbox */
+      width: 1.4rem; /* Adjust width of custom checkbox */
+      border: 1.5px solid #ccc; /* Optional: Add border for checkbox */
+      border-radius: 0.25rem; /* Optional: Add border radius */
+      background-color: white; /* Optional: Add background color */
+      transition: background-color 0.3s, border-color 0.3s; /* Optional: Add transition for smooth effect */
+      display: inline-block; /* Ensure checkbox takes inline-block space */
+      vertical-align: middle; /* Align checkbox vertically with text */
+    }
+
+    /* Checked state style for checkbox */
+    .custom-checkbox input[type="checkbox"]:checked {
+      background-color: #ffffff; /* Change background color when checked */
+      border-color: #363636; /* Change border color when checked */
+    }
+
+    /* Optional: Style for checkbox label */
+    .custom-checkbox-label {
+      margin-left: 0.5rem; /* Add margin for spacing between checkbox and label */
+      vertical-align: middle; /* Align label vertically with checkbox */
+    }
